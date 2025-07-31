@@ -3,7 +3,7 @@ info:
   title: RocketCart Storefront API
   version: 1.0.0
 servers:
-  - url: https://e14290-mr.myshopify.com  # ← valid fake URL for GPT importer
+  - url: https://e14290-mr.myshopify.com/api/2024-07/graphql.json
 paths:
   /graphql.json:
     post:
@@ -18,10 +18,10 @@ paths:
               properties:
                 query:
                   type: string
-                  description: GraphQL query string
+                  description: A complete GraphQL query string
       responses:
         "200":
-          description: GraphQL response
+          description: Successful GraphQL response
           content:
             application/json:
               schema:
