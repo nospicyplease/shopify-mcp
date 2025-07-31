@@ -1,14 +1,14 @@
 openapi: 3.1.0
 info:
-  title: RocketCart Storefront API
-  version: 1.0.0
+  title: Shopify Admin GraphQL API
+  version: 2025-07
 servers:
-  - url: https://e14290-mr.myshopify.com/admin/api/2025-07/graphql.json
+  - url: https://e14290-mr.myshopify.com/admin/api/2025-07
 paths:
-  /storefront-graphql:
+  /graphql.json:
     post:
-      operationId: storefrontGraphQL
-      summary: Send GraphQL query to Shopify Storefront API (wrapped in REST)
+      operationId: postAdminGraphQL
+      summary: Send a GraphQL query to the Shopify Admin API
       requestBody:
         required: true
         content:
@@ -20,6 +20,8 @@ paths:
               properties:
                 query:
                   type: string
+                variables:
+                  type: object
       responses:
         '200':
           description: GraphQL response
@@ -27,11 +29,11 @@ paths:
             application/json:
               schema:
                 type: object
+      security:
+        - shopifyAdminToken: []
 components:
   securitySchemes:
-    shopifyAccessToken:
+    shopifyAdminToken:
       type: apiKey
       in: header
-      name: X-Shopify-Storefront-Access-Token
-security:
-  - shopifyAccessToken: []
+      name: X-Shopify-Access-Token
