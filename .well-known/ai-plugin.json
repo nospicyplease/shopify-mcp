@@ -1,17 +1,17 @@
 {
   "schema_version": "v1",
-  "name_for_human": "Rocketcart",
-  "name_for_model": "Rocketcart_storefront",
-  "description_for_human": "Shop assistant that can search products, build a cart, and create a checkout link.",
-  "description_for_model": "Use this tool to browse products and complete purchases through the Rocketcart Storefront GraphQL API.",
+  "name_for_human": "RocketCart Storefront",
+  "name_for_model": "storefrontGraphQL",
+  "description_for_human": "Query your Shopify Storefront API for product and store data.",
+  "description_for_model": "Send GraphQL queries to the Shopify Storefront API at e14290-mr.myshopify.com. Always include required headers for authentication.",
   "auth": {
     "type": "none"
   },
   "api": {
     "type": "openapi",
-    "url": "https://nospicyplease.github.io/shopify-mcp/shopify-openapi.yaml",
-    "is_user_authenticated": false
+    "url": "https://nospicyplease.github.io/shopify-mcp/shopify-openapi.yaml"
   },
-  "contact_email": "support@example.com",
-  "legal_info_url": "https://e14290-mr.myshopify.com/policies/terms-of-service"
+  "logo_url": "https://nospicyplease.github.io/shopify-mcp/logo.png",
+  "contact_email": "support@rocketcart.ai",
+  "legal_info_url": "https://rocketcart.ai/legal"
 }
