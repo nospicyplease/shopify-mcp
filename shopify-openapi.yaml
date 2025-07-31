@@ -3,7 +3,7 @@ info:
   title: RocketCart Storefront API
   version: 1.0.0
 servers:
-  - url: https://rocketcart.io  # ← valid fake URL for GPT importer
+  - url: https://e14290-mr.myshopify.com  # ← valid fake URL for GPT importer
 paths:
   /graphql.json:
     post:
