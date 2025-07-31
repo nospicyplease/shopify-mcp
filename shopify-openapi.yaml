@@ -1,14 +1,14 @@
 openapi: 3.1.0
 info:
-  title: Shopify Storefront GraphQL API
-  version: 2023-07
+  title: RocketCart Storefront API Proxy
+  version: 1.0.0
 servers:
-  - url: https://e14290-mr.myshopify.com/api/2023-07
+  - url: https://rocketcart9-c34v.vercel.app
 paths:
-  /graphql.json:
+  /api/storefront-graphql:
     post:
       operationId: storefrontGraphQL
-      summary: Send a GraphQL query to the Shopify Storefront API
+      summary: Send a GraphQL query to Shopify Storefront API via RocketCart proxy
       requestBody:
         required: true
         content:
@@ -24,16 +24,8 @@ paths:
                   type: object
       responses:
         '200':
-          description: Successful GraphQL response
+          description: Shopify Storefront GraphQL response
           content:
             application/json:
               schema:
                 type: object
-      security:
-        - shopifyStorefrontToken: []
-components:
-  securitySchemes:
-    shopifyStorefrontToken:
-      type: apiKey
-      in: header
-      name: X-Shopify-Storefront-Access-Token
