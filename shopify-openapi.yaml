@@ -3,7 +3,7 @@ info:
   title: RocketCart Storefront API
   version: 1.0.0
 servers:
-  - url: https://example.com/graphql  # <-- dummy, required for GPT validation
+  - url: https://rocketcart.io  # ← valid fake URL for GPT importer
 paths:
   /graphql.json:
     post:
