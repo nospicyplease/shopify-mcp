@@ -1,14 +1,14 @@
 openapi: 3.0.0
 info:
-  title: RocketCart Storefront API
+  title: RocketCart Function API
   version: 1.0.0
 servers:
-  - url: https://e14290-mr.myshopify.com/api/2024-07
+  - url: https://e14290-mr.myshopify.com/api/2023-07/graphql.json
 paths:
-  /graphql.json:
+  /storefront:
     post:
       operationId: storefrontGraphQL
-      summary: Shopify Storefront GraphQL
+      summary: Send GraphQL query to Shopify Storefront API
       requestBody:
         required: true
         content:
@@ -18,10 +18,9 @@ paths:
               properties:
                 query:
                   type: string
-                  description: A GraphQL query string
       responses:
-        "200":
-          description: Successful GraphQL response
+        '200':
+          description: Storefront API response
           content:
             application/json:
               schema:
