@@ -3,7 +3,7 @@ info:
   title: RocketCart Storefront API
   version: 1.0.0
 servers:
-  - url: https://www.rocketcart.io
+  - url: https://www.rocketcart.io/myshopify.com/admin/api/2025-07/graphql.json
 paths:
   /storefront-graphql:
     post:
