@@ -3,7 +3,7 @@ info:
   title: RocketCart Storefront API
   version: 1.0.0
 servers:
-  - url: https://example.com
+  - url: https://www.rocketcart.io
 paths:
   /graphql.json:
     post:
@@ -20,8 +20,8 @@ paths:
                   type: string
                   description: A GraphQL query string
       responses:
-        '200':
-          description: Success
+        "200":
+          description: Successful GraphQL response
           content:
             application/json:
               schema:
