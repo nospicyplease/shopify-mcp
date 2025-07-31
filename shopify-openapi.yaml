@@ -1,14 +1,14 @@
 openapi: 3.1.0
 info:
-  title: Shopify Admin GraphQL API
-  version: 2025-07
+  title: Shopify Storefront GraphQL API
+  version: 2023-07
 servers:
-  - url: https://e14290-mr.myshopify.com/admin/api/2025-07
+  - url: https://e14290-mr.myshopify.com/api/2023-07
 paths:
   /graphql.json:
     post:
-      operationId: postAdminGraphQL
-      summary: Send a GraphQL query to the Shopify Admin API
+      operationId: storefrontGraphQL
+      summary: Send a GraphQL query to the Shopify Storefront API
       requestBody:
         required: true
         content:
@@ -24,16 +24,16 @@ paths:
                   type: object
       responses:
         '200':
-          description: GraphQL response
+          description: Successful GraphQL response
           content:
             application/json:
               schema:
                 type: object
       security:
-        - shopifyAdminToken: []
+        - shopifyStorefrontToken: []
 components:
   securitySchemes:
-    shopifyAdminToken:
+    shopifyStorefrontToken:
       type: apiKey
       in: header
-      name: X-Shopify-Access-Token
+      name: X-Shopify-Storefront-Access-Token
