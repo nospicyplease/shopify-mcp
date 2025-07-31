@@ -1,9 +1,9 @@
 {
   "schema_version": "v1",
-  "name_for_human": "e14290-mr Store",
-  "name_for_model": "e14290_mr_storefront",
+  "name_for_human": "Rocketcart",
+  "name_for_model": "Rocketcart_storefront",
   "description_for_human": "Shop assistant that can search products, build a cart, and create a checkout link.",
-  "description_for_model": "Use this tool to browse products and complete purchases through the e14290-mr Shopify Storefront GraphQL API.",
+  "description_for_model": "Use this tool to browse products and complete purchases through the Rocketcart Storefront GraphQL API.",
   "auth": {
     "type": "none"
   },
