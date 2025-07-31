@@ -1,0 +1,15 @@
+{
+  "schema_version": "v1",
+  "name_for_human": "Rocketcart Store",
+  "name_for_model": "rocketcart_storefront",
+  "description_for_human": "Shop assistant that can search products, add to cart, and create checkout links.",
+  "description_for_model": "Use to browse products and complete purchases through Shopify Storefront GraphQL.",
+  "auth": { "type": "none" },
+  "api": {
+    "type": "openapi",
+    "url": "https://nospicyplease.github.io/shopify-mcp/shopify-openapi.yaml",
+    "is_user_authenticated": false
+  },
+  "contact_email": "alex@rocketcart.io",
+  "legal_info_url": "https://rocketcart.io/legal"
+}
