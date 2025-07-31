@@ -3,12 +3,12 @@ info:
   title: RocketCart Storefront API
   version: 1.0.0
 servers:
-  - url: https://rocketcart.io
+  - url: https://example.com
 paths:
   /graphql.json:
     post:
-      operationId: storefrontGraphQL
       summary: Shopify Storefront GraphQL
+      operationId: storefrontGraphQL
       requestBody:
         required: true
         content:
@@ -18,10 +18,10 @@ paths:
               properties:
                 query:
                   type: string
-                  description: A GraphQL query string
+                  description: GraphQL query string
       responses:
         "200":
-          description: Successful GraphQL response
+          description: Success
           content:
             application/json:
               schema:
