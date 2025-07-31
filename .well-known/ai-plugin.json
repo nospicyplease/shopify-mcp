@@ -2,8 +2,8 @@
   "schema_version": "v1",
   "name_for_human": "RocketCart Storefront",
   "name_for_model": "storefrontGraphQL",
-  "description_for_human": "Query RocketCart’s Shopify Storefront API for product data.",
-  "description_for_model": "Send GraphQL queries to RocketCart’s Shopify Storefront API. Always include headers.",
+  "description_for_human": "Query RocketCart’s Shopify Storefront API for real-time product and store data.",
+  "description_for_model": "Send GraphQL queries to RocketCart’s Shopify Storefront API via a dummy REST endpoint. Always include required headers.",
   "auth": {
     "type": "none"
   },
@@ -14,8 +14,4 @@
   "logo_url": "https://nospicyplease.github.io/shopify-mcp/logo.png",
   "contact_email": "support@rocketcart.ai",
   "legal_info_url": "https://rocketcart.ai/legal"
-}
-{
-  "X-Shopify-Storefront-Access-Token": "882e6ece324cc7ed1d7bb2a510264757",
-  "Content-Type": "application/json"
 }
