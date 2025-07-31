@@ -1,6 +1,6 @@
 openapi: 3.0.0
 info:
-  title: RocketCart Function API
+  title: RocketCart Storefront API
   version: 1.0.0
 servers:
   - url: https://e14290-mr.myshopify.com/api/2023-07/graphql.json
@@ -25,3 +25,11 @@ paths:
             application/json:
               schema:
                 type: object
+components:
+  securitySchemes:
+    shopifyAccessToken:
+      type: apiKey
+      in: header
+      name: X-Shopify-Storefront-Access-Token
+security:
+  - shopifyAccessToken: [882e6ece324cc7ed1d7bb2a510264757]
