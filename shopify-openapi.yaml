@@ -8,19 +8,21 @@ paths:
   /storefront-graphql:
     post:
       operationId: storefrontGraphQL
-      summary: Send GraphQL query to Shopify Storefront API
+      summary: Send GraphQL query to Shopify Storefront API (wrapped in REST)
       requestBody:
         required: true
         content:
           application/json:
             schema:
               type: object
+              required:
+                - query
               properties:
                 query:
                   type: string
       responses:
         '200':
-          description: Shopify Storefront GraphQL Response
+          description: GraphQL response
           content:
             application/json:
               schema:
