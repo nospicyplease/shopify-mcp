@@ -3,7 +3,7 @@ info:
   title: RocketCart Storefront API
   version: 1.0.0
 servers:
-  - url: - url: https://dummy.rocketcart.ai
+  - url: https://dummy.rocketcart.ai  # Valid static URL for GPT schema parsing
 paths:
   /graphql.json:
     post:
