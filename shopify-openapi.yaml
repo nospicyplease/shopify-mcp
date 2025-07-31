@@ -1,0 +1,33 @@
+openapi: 3.0.0
+info:
+  title: e14290-mr Storefront API
+  version: 1.0.0
+servers:
+  - url: https://e14290-mr.myshopify.com/api/2024-07/graphql.json
+paths:
+  /graphql.json:
+    post:
+      summary: Shopify Storefront GraphQL
+      operationId: storefrontGraphQL
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                query:
+                  type: string
+                  description: |
+                    A complete GraphQL query string.
+                    Use it for:
+                      • searching products
+                      • creating / updating carts
+                      • creating a checkout
+      responses:
+        "200":
+          description: GraphQL response
+          content:
+            application/json:
+              schema:
+                type: object
