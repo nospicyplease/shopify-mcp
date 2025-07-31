@@ -2,8 +2,8 @@
   "schema_version": "v1",
   "name_for_human": "RocketCart Storefront",
   "name_for_model": "storefrontGraphQL",
-  "description_for_human": "Query your Shopify Storefront API for product and store data.",
-  "description_for_model": "Send GraphQL queries to the Shopify Storefront API at e14290-mr.myshopify.com. Always include required headers for authentication.",
+  "description_for_human": "Query RocketCart’s Shopify Storefront API for product data.",
+  "description_for_model": "Send GraphQL queries to RocketCart’s Shopify Storefront API. Always include headers.",
   "auth": {
     "type": "none"
   },
