@@ -3,9 +3,9 @@ info:
   title: RocketCart Storefront API
   version: 1.0.0
 servers:
-  - url: https://e14290-mr.myshopify.com/api/2023-07/graphql.json
+  - url: https://e14290-mr.myshopify.com
 paths:
-  /storefront:
+  /api/2023-07/graphql.json:
     post:
       operationId: storefrontGraphQL
       summary: Send GraphQL query to Shopify Storefront API
@@ -20,7 +20,7 @@ paths:
                   type: string
       responses:
         '200':
-          description: Storefront API response
+          description: Response from Storefront API
           content:
             application/json:
               schema:
@@ -32,4 +32,4 @@ components:
       in: header
       name: X-Shopify-Storefront-Access-Token
 security:
-  - shopifyAccessToken: [882e6ece324cc7ed1d7bb2a510264757]
+  - shopifyAccessToken: []
