@@ -1,5 +1,28 @@
 openapi: 3.0.0
-info: {title: Test, version: 1.0.0}
+info:
+  title: RocketCart Storefront API
+  version: 1.0.0
 servers:
-  - url: https://example.com
-paths: {}
+  - url: https://e14290-mr.myshopify.com/api/2024-07
+paths:
+  /graphql.json:
+    post:
+      operationId: storefrontGraphQL
+      summary: Shopify Storefront GraphQL
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                query:
+                  type: string
+                  description: A GraphQL query string
+      responses:
+        "200":
+          description: Successful GraphQL response
+          content:
+            application/json:
+              schema:
+                type: object
