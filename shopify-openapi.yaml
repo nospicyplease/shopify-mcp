@@ -5,7 +5,7 @@ info:
 servers:
   - url: https://www.rocketcart.io
 paths:
-  /api/2023-07/graphql.json:
+  /storefront-graphql:
     post:
       operationId: storefrontGraphQL
       summary: Send GraphQL query to Shopify Storefront API
@@ -20,7 +20,7 @@ paths:
                   type: string
       responses:
         '200':
-          description: Shopify Storefront response
+          description: Shopify Storefront GraphQL Response
           content:
             application/json:
               schema:
