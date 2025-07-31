@@ -3,12 +3,12 @@ info:
   title: RocketCart Storefront API
   version: 1.0.0
 servers:
-  - url: https://dummy.rocketcart.ai  # Valid static URL for GPT schema parsing
+  - url: https://example.com
 paths:
   /graphql.json:
     post:
-      summary: Shopify Storefront GraphQL
       operationId: storefrontGraphQL
+      summary: Shopify Storefront GraphQL
       requestBody:
         required: true
         content:
@@ -18,7 +18,7 @@ paths:
               properties:
                 query:
                   type: string
-                  description: A complete GraphQL query string
+                  description: A GraphQL query string
       responses:
         "200":
           description: Successful GraphQL response
